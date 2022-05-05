@@ -1,0 +1,284 @@
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: auto;
+  background-color: #387ad4;
+  opacity: ;
+}
+.ss{}
+.homeP {
+
+}
+.train {
+
+}
+.aboutUs {
+}
+
+
+.ss.actives a{
+  color: grey;
+  font-size: 120%;
+  background-color: white;
+}
+
+
+.forWindow{
+  display: none;
+}
+.forWindow.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+.regModalWinodwContent {
+  margin-top: 8%;
+  margin-left: 35%;
+	height: 55%;
+	width: 30%;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+
+}
+
+.close.forLog{
+  position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+
+.logModalWinodwContent{
+  margin-top: 15%;
+  margin-left: 37%;
+  height: 27%;
+	width: 24%;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+.container.text{
+  float: left;
+}
+
+.letsStart{
+
+}
+.trenirovka{
+  width: 90%;
+  background-color:  white;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.LogInputs{}
+.submitBottomLog{}
+.button1{}
+
+
+
+
+
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 6vh;
+      background-color: #387ad4;
+      opacity: ;
+      font-family: "Poppins", sans-serif;
+  }
+
+
+
+  .nav-linkss {
+
+
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  .nav-linkss li {
+
+      list-style: none;
+  }
+
+  .nav-linkss a {
+      color: rgb(226, 226, 226);
+      /* text-decoration: none; */
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 15px;
+  }
+
+  .burger {
+      display: none;
+  }
+
+  .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: rgb(226, 226, 226);
+      margin: 5px;
+      transition: all 0.3s ease;
+  }
+
+  @media screen and (max-width: 1200px) {
+      .nav-linkss {
+          width: 60%;
+      }
+  }
+
+  @media screen and (max-width: 1200px) {
+      body {
+          overflow-x: hidden;
+      }
+
+      .nav-linkss {
+          position: fixed;
+          right: 0px;
+          height: 100%;
+          top: 3.5vh;
+          background-color: #387ad4;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 50%;
+          transform: translateX(100%);
+          transition: transform 0.5s ease-in;
+      }
+
+      .nav-linkss li {
+          opacity: 0;
+      }
+
+      .burger {
+        margin-top: 1.7vh;
+          display: block;
+          cursor: pointer;
+
+      }
+
+      .regModalWinodwContent {
+        margin-top: 15%;
+        margin-left: 25%;
+      	height: 60%;
+      	width: 50%;
+      	background-color: white;
+      	text-align: center;
+      	padding: 20px;
+      	position: relative;
+      	border-radius: 4px;
+      }
+
+      .logModalWinodwContent{
+        margin-top: 30%;
+        margin-left: 30%;
+        height: 30%;
+      	width: 40%;
+      	background-color: white;
+      	text-align: center;
+      	padding: 20px;
+      	position: relative;
+      	border-radius: 4px;
+      }
+  }
+
+
+  @media screen and (max-width: 900px) {
+
+
+      .regModalWinodwContent {
+        margin-top: 15%;
+        margin-left: 10%;
+        height: 70%;
+        width: 80%;
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        border-radius: 4px;
+      }
+
+      .logModalWinodwContent{
+        margin-top: 60%;
+        margin-left: 20%;
+        height: 33%;
+        width: 70%;
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        border-radius: 4px;
+      }
+  }
+
+
+
+  .nav-active {
+          transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+      from {
+          opacity: 0;
+          transform: translateX(50px);
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+  .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+      opacity: 0;
+  }
+
+  .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
